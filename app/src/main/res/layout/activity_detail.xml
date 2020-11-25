@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="horizontal"
+    android:background="@color/lightbackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        >
+        <ImageView
+            android:id="@+id/detilofmobile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/smartphone"
+            android:scaleType="centerCrop"
+            >
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:neumorph_shapeType="flat">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mobile Name"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="cursive"></TextView>
+
+                <TextView
+                    android:id="@+id/mobilename"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:hint="MobileName"
+                    android:textSize="30sp"
+                    android:layout_marginStart="160dp"
+                    android:textStyle="bold|italic">
+
+                </TextView>
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/l1">
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:neumorph_shapeType="flat">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Mobile Information"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="cursive"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/mobileinfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold|italic"
+                android:layout_marginStart="160dp"
+                android:hint="Mobile Information"
+                android:gravity="center"
+                android:textSize="30sp"
+                ></TextView>
+            </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/l2">
+
+            <soup.neumorphism.NeumorphCardView
+                style="@style/Widget.Neumorph.CardView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:neumorph_shapeType="flat">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="Location"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:fontFamily="cursive"
+                >
+
+            </TextView>
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold|italic"
+                android:hint="Location"
+                android:layout_marginStart="160dp"
+                android:gravity="center"
+                android:textSize="30sp"
+                ></TextView>
+            </soup.neumorphism.NeumorphCardView>
+
+
+        </LinearLayout>
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_below="@+id/l3"
+        app:neumorph_shapeType="flat"
+        style="@style/Widget.Neumorph.CardView">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/l4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Price"
+                android:textSize="20sp"
+                android:textStyle="bold|italic">
+
+            </TextView>
+            <TextView
+                android:id="@+id/mobileprice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Price"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                >
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l5"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/l4"
+
+           >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textStyle="bold|italic"
+                android:hint="Contact"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:fontFamily="cursive"
+                ></TextView>
+            <TextView
+                android:id="@+id/contact"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold|italic"
+                android:hint="Contact"
+                android:gravity="center"
+                android:textSize="30sp"
+                ></TextView>
+        </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<soup.neumorphism.NeumorphCardView
+    style="@style/Widget.Neumorph.CardView"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:neumorph_shapeType="pressed"
+    android:id="@+id/c1"
+    app:neumorph_backgroundColor="#A7EA89"
+    >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/aclonica"
+        android:gravity="center"
+        android:text="Find Used Mobile"
+        android:textSize="25sp"
+        android:textStyle="bold">
+
+    </TextView>
+</soup.neumorphism.NeumorphCardView>
+
+        <LinearLayout
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/c1"
+
+            >
+
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:neumorph_shapeType="flat">
+            <EditText
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:padding="2dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:hint="Mobile Model "
+                android:textCursorDrawable="@drawable/cursor"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerCities"
+                    android:layout_width="140dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="120dp"
+                    android:entries="@array/Cities"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    />
+                <EditText
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:hint="Range"
+                    android:padding="2dp"
+                    android:inputType="number"
+                    android:layout_marginStart="250dp"
+                    android:textCursorDrawable="@drawable/cursor"
+                    android:background="@android:color/transparent">
+
+                </EditText>
+        </soup.neumorphism.NeumorphCardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/l"
+            android:gravity="center">
+<!--            <soup.neumorphism.NeumorphCardView-->
+<!--                android:layout_width="220"-->
+<!--                android:layout_height="70dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                app:cardCornerRadius="5dp">-->
+
+                <soup.neumorphism.NeumorphButton
+                    style="@style/Widget.Neumorph.Button"
+                    android:id="@+id/searchicon"
+                    android:layout_width="200dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:text="search"
+                    app:neumorph_shapeType="flat"
+                    />
+
+<!--            </soup.neumorphism.NeumorphCardView>-->
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search"
+            android:layout_margin="10dp"
+            android:scrollbarAlwaysDrawHorizontalTrack="true"
+            >
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.sellphone.Singup">
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:cardCornerRadius="8dp"
+        app:neumorph_shapeType="flat">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="New User? "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:fontFamily="serif"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="SignUp to Register your Account"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:fontFamily="sans-serif-smallcaps"/>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@id/card"
+        app:neumorph_shapeType="basin"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:padding="6dp"
+                android:hint="Name "
+                android:textCursorDrawable="@drawable/cursor"
+                android:background="@android:color/transparent">
+            </androidx.appcompat.widget.AppCompatEditText>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@+id/card1"
+        app:neumorph_shapeType="basin"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edusername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:hint="Username "
+                android:textCursorDrawable="@drawable/cursor"
+                android:background="@android:color/transparent"
+                >
+            </androidx.appcompat.widget.AppCompatEditText>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@+id/card2"
+        app:neumorph_shapeType="basin"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:hint="Password "
+                android:textCursorDrawable="@drawable/cursor"
+                android:background="@android:color/transparent">
+            </androidx.appcompat.widget.AppCompatEditText>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+        android:id="@+id/card4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@+id/card3"
+        app:neumorph_shapeType="basin"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edrepassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:hint="Retype "
+                android:textCursorDrawable="@drawable/cursor"
+                android:background="@android:color/transparent">
+            </androidx.appcompat.widget.AppCompatEditText>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        style="@style/Widget.Neumorph.CardView"
+       android:id="@+id/card5"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:cardCornerRadius="8dp"
+        android:layout_below="@+id/card4"
+        app:neumorph_shapeType="basin"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edCNIC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:hint="Cnic "
+                android:textCursorDrawable="@drawable/cursor"
+                android:background="@android:color/transparent">
+            </androidx.appcompat.widget.AppCompatEditText>
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+
+
+        <soup.neumorphism.NeumorphButton
+            style="@style/Widget.Neumorph.Button"
+            android:id="@+id/signup"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:text="Register"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/card5"
+            android:layout_marginTop="50dp"
+
+            app:cornerRadius="2dp"
+            android:layout_marginStart="100dp"
+            android:layout_gravity="center"
+            app:neumorph_backgroundColor="#A7EA89"
+
+            app:neumorph_shadowElevation="6dp" >
+<!--            app:neumorph_shadowColorLight="@android:color/holo_green_dark"-->
+<!--            app:neumorph_shadowColorDark="@android:color/holo_green_dark"-->
+
+        </soup.neumorphism.NeumorphButton>
+
+
+</RelativeLayout>
